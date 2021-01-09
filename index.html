@@ -28,17 +28,45 @@
                     <img src="https://i.pinimg.com/originals/c7/67/f8/c767f8737836f9c8c0879dd4640e5397.gif">
                </aside>
                <aside class="welcome-message">
-                    <p class="welcome-p">Welcome to the scariest trivia game in the world!</p>
-                    <ul class="welcome-ul">
-                        <li class="welcome-li-bullets">Test your knowledge about Monsters from the most frightening films in this terrorific game!</li>
-                        <li class="welcome-li-bullets">Amaze your friends by beating the Monstruos Alcohoritm behind this quiz!</li>
-                    </ul>
+                   <div class=message-text>
+                        <p class="welcome-p">Welcome to the scariest trivia game in the world!</p>
+                        <ul class="welcome-ul">
+                            <li class="welcome-li-bullets">Test your knowledge about Monsters from the most frightening films in this terrorific game!</li>
+                            <li class="welcome-li-bullets">Amaze your friends by beating the Monstrous Alcohoritm behind this quiz!</li>
+                        </ul>
+                    </div>
+                    <div class="options">
+                        <ul id="game-options">
+                            <a class="game-options-btn" id="classic-terrors" href="#">Classics Challenge</a>
+                            <a class="game-options-btn" id="modern-terrors" href="#">Modern Terrors</a> 
+                        </ul>
+                    </div> 
+                    <div id="classic-terror-modal" class="modal">
+                        <div class="modal-container">
+                            <h1 class="ctm-modal-header">Classic Terrors</h1>
+                            <br>
+                            <div class="ctm-modal-question"></div>
+                            <ul class="ctm-modal-answers"></ul>
+                            <div class="ctm-modal-result"></div>
+                            <div class="ctm-modal-nxt-ntn"><a class="ctm-nxt-btn" href="#">Next Thrill</a></div>
+                            <br>
+                            <span class="ctm-return">&times;</span>
+                        </div>
+                    </div>
+                    <div id="modern-terror-modal" class="modal">
+                        <div class="modal-container">
+                            <h1 class="mtm-modal-header">Classic Terrors</h1>
+                            <br>
+                            <div class="mtm-modal-question"></div>
+                            <ul class="mtm-modal-answers"></ul>
+                            <div class="mtm-modal-result"></div>
+                            <div class="mtm-modal-nxt-ntn"><a class="ctm-nxt-btn" href="#">Next Thrill</a></div>
+                            <br>
+                            <span class="mtm-return">&times;</span>
+                        </div>
+                    </div>
                 </aside>
-            </div>
-            <ul id="game-options">
-                <a class="game-options-btn" id="classic-terrors" href="#">Classics Challenge</a>
-                <a class="game-options-btn" id="modern-terrors" href="#">Modern Terrors</a> 
-            </ul>
+            </div>       
         </section>
     </main>
     <footer>
