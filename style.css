@@ -43,6 +43,51 @@ ul  {
     justify-content: center;
 }
 
+.main-screen {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-content: center;
+}
+
+.walking-frank {
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.welcome-message {
+    background-image: url(https://i.imgur.com/4h6FJJx.png);
+    background-repeat: no-repeat;
+    width: 840px;
+    height: 490px;
+    padding: 10px;
+    border-radius: 8px 8px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content:center;
+    color: white;
+    font-size: 20px;
+}
+
+.welcome-p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.welcom-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.welcome-li-bullets {
+    width: 270px;
+    text-align: center;
+    margin-right: 25px;
+}
+
 .game-options-btn {
     border-radius: 5px;
     background: linear-gradient(45deg, rgb(206, 61, 17), rgb(255, 255, 0), hsl(19, 100%, 50%));
@@ -58,4 +103,11 @@ ul  {
     margin: 5px;
     justify-self: center;
 }
+
+footer {
+    background-color: black;
+    padding: 5px;
+}
+
+
 
