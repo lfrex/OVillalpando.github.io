@@ -61,7 +61,71 @@ const classicTerrorQuestions = [
         options: ["Boris Karloff", "Tilda Swinton", "John Carradine", "Bela Lugosi"],
         correctAnswer: 2
     },
-]   
+];   
+
+const modernTerrorQuestions = [
+    {
+        question: "Who interpreted \"The Djinn\" in 1997's \"Whishmaster\" film?",
+        imgUrl: "https://i.imgur.com/S5Qh2Se.jpg",
+        options: ["Andrew Divoff", "Tilda Swinton", "David Hasselhoff", "Robert Kurtzman"],
+        correctAnswer: 0
+    },
+    {
+        question: "How many doors were destroyed by Jack Nicholson in \"The shinning\"?",
+        imgUrl: "https://i.imgur.com/hV3exkY.jpg",
+        options: [46, 72, 60, 24],
+        correctAnswer: 0
+    },
+    {
+        question: "How many sequels does \"Killer Clowns from Outter Space\" have?",
+        imgUrl: "https://i.imgur.com/S5L2T9u.jpg",
+        options: [0, 2, 6, 1],
+        correctAnswer: 0
+    },
+    {
+        question: "Whose special effects genious was the director of 1988's \"Pumpkinhead\"?",
+        imgUrl: "https://i.imgur.com/2w1pWQU.jpg",
+        options: ["Tilda Swinton", "Stan Winston", "Sebastian Stan", "Robert Kurtzman"],
+        correctAnswer: 1
+    },
+    {
+        question: "Real name of the clown who appears in the \"It\" movie?",
+        imgUrl: "https://i.imgur.com/SwvE5De.png",
+        options: ["Tilda Swinton", "Bill Skarsgard", "Pennywise", "Tim Curry"],
+        correctAnswer: 2
+    },
+    {
+        question: "What its the most popular nickname for the \"Creature from Black Lagoon\"?",
+        imgUrl: "https://i.imgur.com/Tzge2N4.jpg",
+        options: ["Fishman", "Gill-Man", "Mer-Man", "Aqua-Man"],
+        correctAnswer: 1
+    },
+    {
+        question: "Who is the director of 1925 \"The Phantom of the Opera\"?",
+        imgUrl: "https://i.imgur.com/j4NGL8d.jpg",
+        options: ["Rupert Julian", "Tod Browning", "Alfred Hitchcock", "James Whale"],
+        correctAnswer: 0
+    },
+    {
+        question: "Who kill \"King Kong\" in the 1933's movie?",
+        imgUrl: "https://i.imgur.com/MhALhjO.jpg",
+        options: ["Airplanes", "Died of Covid-02", "Beauty", "A giant lizzard"],
+        correctAnswer: 2
+    },
+    {
+        question: "Who played Nosferatu in the 1925's movie?",
+        imgUrl: "https://i.imgur.com/Fm0z9HV.png",
+        options: ["Nicholas Cage", "Tilda Swinton", "A duck disguised as a vampire", "Max Schreck"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which famous actor can be seen in a cameo rol in 1933's \"The invisible man\"?",
+        imgUrl: "https://i.imgur.com/rukReju.jpg",
+        options: ["Boris Karloff", "Tilda Swinton", "John Carradine", "Bela Lugosi"],
+        correctAnswer: 2
+    },
+];   
+
 
 
 
