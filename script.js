@@ -126,7 +126,9 @@ const modernTerrorQuestions = [
     },
 ];   
 
-
+let currentQuestion = 0;
+let correctAnswers = 0;
+let gameCompleted = false;
 
 
 

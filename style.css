@@ -151,19 +151,19 @@ footer {
     border: 3px solid white;
     margin-top: 80px;
     display: flex;
-    flex-direction: column;
 }
 
 .ctm-modal-header,
 .mtm-modal-header {
     font-family: 'Creepster', cursive;
     font-size: 50px;
-    text-align: center;
     padding-top: 40px;;
     text-decoration: none;
+    justify-self: center;
     background: -webkit-linear-gradient(rgb(255, 255, 0), #e62e00);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    
+    -webkit-text-fill-color: transparent;  
+    margin-bottom: -25px;  
 }
 
 .ctm-modal-nxt-btn,
@@ -173,13 +173,14 @@ footer {
     color: red;
     text-decoration: none;
     align-self: center;
+    justify-self: end;
     width: 200px; 
     text-align: center;
     font-size: 25px;
     font-weight: bold;
     border: solid darkviolet;
     padding: 5px;
-    justify-self: flex-end;
+    justify-self: center;
 }
 
 .ctm-modal-nxt-btn:hover,
@@ -207,5 +208,33 @@ footer {
     background-color:rgba(255, 255, 255, 0.6);
 }
 
+.ctm-modal-question {
+    color: white;
+    text-align: left;
+    margin-left: 50px;
+    font-size: 25px;
+    width: 500px;
+    align-self: start;
+    margin-top: 5px;
+}
 
+.question-img-container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 390px;
+    height: 300px;
+}
 
+.quizz-img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border: 1px solid white;
+    align-self: end;
+}
+
+.ctm-modal-answers a {
+    color: white;
+    text-decoration: none;
+    display:block;
+}
