@@ -140,8 +140,8 @@ console.log(ctmChallenge);
 ctmChallenge.addEventListener("click", function(evt) {
     displayCurrentQuestion(); 
 
-    let ctm-quizzMessages = document.querySelector(".ctm-quizzMessages");
-    ctm-quizzMessages.style.display = "none";
+    let ctmQuizzMessages = document.querySelector(".ctm-quizzMessages");
+    ctmQuizzMessages.style.display = "none";
 
     document.querySelector(".ctm-modal-nxt-btn").addEventListener("click", function() {
 
@@ -149,18 +149,18 @@ ctmChallenge.addEventListener("click", function(evt) {
             let radioBtnsReview = document.querySelector("input[type=radio]:checked");
 
             if (radioBtnsReview === null) {
-                ctm-quizzMessages.innerText = "Don't be scared, you chicken! Please select an answer!";
-                ctm-quizzMessages.style.display = "block";
+                ctmQuizzMessages.innerText = "Don't be scared, you chicken! Please select an answer!";
+                ctmQuizzMessages.style.display = "block";
             } else {
                 console.log(radioBtnsReview.value);
-                ctm-quizzMessages.style.display = "none";
+                ctmQuizzMessages.style.display = "none";
                 if (parseInt(radioBtnsReview.value) === classicTerrorQuestions[currentQuestion].correctAnswer) {
                     correctAnswers++;
                 }
                 
                 currentQuestion++;
 
-                
+
 
                 
             }
