@@ -126,9 +126,37 @@ const modernTerrorQuestions = [
     },
 ];   
 
+//Displasy content for Classic Challenge:
+
 let currentQuestion = 0;
 let correctAnswers = 0;
 let gameCompleted = false;
+const ctmChallenge = document.querySelector("#classic-terrors");
+
+console.log(ctmChallenge);
+
+ctmChallenge.addEventListener("click", function(evt) {
+    displayCurrentQuestion(); 
+})
+
+function displayCurrentQuestion() {
+    let question = classicTerrorQuestions[currentQuestion].question;
+    let questionClass = document.querySelector(".ctm-modal-questions > .ctm-modal-question");
+    let choiceList = document.querySelector(".ctm-modal-questions > .ctm-modal-answers");
+    let numChoices = classicTerrorQuestions[currentQuestion].options.length;
+
+    questionClass.innerText = question;
+    choiceList.innerHTML = "";
+
+    let choice;
+    for(i = 0; i < numChoices; i++) {
+        choice = classicTerrorQuestions[currentQuestion].options[i];
+
+        let li = document.createElement("li");
+        li.innerHTML = '<li><input type="radio" value="' + i + '" name="dynradio" />' + choice + '</li>'
+        choiceList.appendChild(li);
+    }
+}
 
 
 
