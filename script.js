@@ -158,7 +158,22 @@ function displayCurrentQuestion() {
     }
 }
 
+function resetGame() {
+    currentQuestion = 0;
+    correctAnswers = 0;
+    hideScore();
+}
 
+//Functions to display-hide score
+
+function displayScore() {
+    document.querySelector(".ctm-modal-questions > .ctm-modal-result").innerText = "Great! You're score is " + correctAnswers + "out of " + classicTerrorQuestions.length;
+    document.querySelector(".ctm-modal-questions > .ctm-modal-result").style.display = "block";
+}
+
+function hideScore() {
+    document.querySelector(".ctm-modal-result").style.display = "none";
+}
 
 
 //Modal sections construction
