@@ -135,9 +135,48 @@ const ctmChallenge = document.querySelector("#classic-terrors");
 
 console.log(ctmChallenge);
 
+
+
 ctmChallenge.addEventListener("click", function(evt) {
     displayCurrentQuestion(); 
-})
+
+    let ctm-quizzMessages = document.querySelector(".ctm-quizzMessages");
+    ctm-quizzMessages.style.display = "none";
+
+    document.querySelector(".ctm-modal-nxt-btn").addEventListener("click", function() {
+
+        if(!gameCompleted){
+            let radioBtnsReview = document.querySelector("input[type=radio]:checked");
+
+            if (radioBtnsReview === null) {
+                ctm-quizzMessages.innerText = "Don't be scared, you chicken! Please select an answer!";
+                ctm-quizzMessages.style.display = "block";
+            } else {
+                console.log(radioBtnsReview.value);
+                ctm-quizzMessages.style.display = "none";
+                if (parseInt(radioBtnsReview.value) === classicTerrorQuestions[currentQuestion].correctAnswer) {
+                    correctAnswers++;
+                }
+                
+                currentQuestion++;
+
+                
+
+                
+            }
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+
 
 function displayCurrentQuestion() {
     let question = classicTerrorQuestions[currentQuestion].question;
