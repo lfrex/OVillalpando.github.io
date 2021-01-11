@@ -299,8 +299,22 @@ function resetMtmGame() {
 //Functions to display-hide score MTM-Challenge
 
 function displayMtmScore() {
-    document.querySelector(".mtm-modal-questions > .mtm-modal-result").innerText = "Great! You're score is " + mtmcorrectAnswers + " out of " + modernTerrorQuestions.length;
-    document.querySelector(".mtm-modal-questions > .mtm-modal-result").style.display = "block";
+    if(mtmcorrectAnswers == 10) {
+        document.querySelector(".mtm-modal-questions > .mtm-modal-result").innerText = "You're simply a GENIOUS! You scored " + mtmcorrectAnswers + " out of " + modernTerrorQuestions.length + "!";
+        document.querySelector(".mtm-modal-questions > .mtm-modal-result").style.display = "block";
+    } else if(mtmcorrectAnswers == 8 || mtmcorrectAnswers == 9) {
+        document.querySelector(".mtm-modal-questions > .mtm-modal-result").innerText = "Amazing! You'got " + mtmcorrectAnswers + " out of " + modernTerrorQuestions.length + "!";
+        document.querySelector(".mtm-modal-questions > .mtm-modal-result").style.display = "block";
+    } else if (mtmcorrectAnswers == 7 || mtmcorrectAnswers == 6) {
+        document.querySelector(".mtm-modal-questions > .mtm-modal-result").innerText = "Not bad Boy! You're score is " + mtmcorrectAnswers + " out of " + modernTerrorQuestions.length + "!";
+        document.querySelector(".mtm-modal-questions > .mtm-modal-result").style.display = "block";
+    } else if(mtmcorrectAnswers == 5) {
+        document.querySelector(".mtm-modal-questions > .mtm-modal-result").innerText = "C'mon Boy, you could do it better! You're score is " + mtmcorrectAnswers + " out of " + modernTerrorQuestions.length + "!";
+        document.querySelector(".mtm-modal-questions > .mtm-modal-result").style.display = "block";
+    } else if(mtmcorrectAnswers < 5) {
+        document.querySelector(".mtm-modal-questions > .mtm-modal-result").innerText = "Geez! You only got " + mtmcorrectAnswers + " right answers out of " + modernTerrorQuestions.length + "! Don't tell anyone you tried this!";
+        document.querySelector(".mtm-modal-questions > .mtm-modal-result").style.display = "block";
+    }
 }
 
 function hideMtmScore() {

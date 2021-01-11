@@ -172,14 +172,14 @@ footer {
     background: linear-gradient(45deg, rgb(206, 61, 17), rgb(255, 255, 0), hsl(19, 100%, 50%));
     color: red;
     text-decoration: none;
-    align-self: flex-end;
+    align-self: center;
     width: 200px; 
     text-align: center;
     font-size: 25px;
     font-weight: bold;
     border: solid darkviolet;
     padding: 5px;
-    justify-self: center;
+    justify-self: flex-end;
 }
 
 .ctm-modal-nxt-btn:hover,
@@ -231,9 +231,11 @@ footer {
     font-size: 25px;
 }
 
-.question-img-container {
-    align-self: center;
-max-width: 50%;
+.ctm-quizzMessages,
+.mdm-quizzMessages {
+    color: white;
+    padding-left: 50px;
 }
+
 
 
