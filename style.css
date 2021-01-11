@@ -211,6 +211,26 @@ footer {
     background-color:rgba(255, 255, 255, 0.6);
 }
 
+.ctm-modal-question,
+.mtm-modal-question {
+    color: white;
+    padding-left: 50px;
+    font-size: 25px;
+}
+
+.mtm-modal-answers,
+.ctm-modal-answers {
+    color: white;
+    display: inline;
+    padding-left: 70px;
+    font-size: 20px;
+}
+
+.mtm-modal-result {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
 
 
 
