@@ -160,10 +160,21 @@ ctmChallenge.addEventListener("click", function(evt) {
                 
                 currentQuestion++;
 
-
-
+                if(currentQuestion < classicTerrorQuestions.length) {
+                    displayCurrentQuestion();
+                } else {
+                    displayScore();
+                    document.querySelector(".ctm-modal-nxt-btn").innerText = "Wanna play Again?";
+                    gameCompleted = true;
+                }
                 
             }
+        } else {
+            gameCompleted = false;
+            document.querySelector(".ctm-modal-nxt-btn").innerText = "Next scare =>";
+            resetGame();
+            displayCurrentQuestion();
+            hideScore();
         }
     });
 });
