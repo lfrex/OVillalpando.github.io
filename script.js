@@ -208,8 +208,22 @@ function resetGame() {
 //Functions to display-hide score CTM-Challenge
 
 function displayScore() {
-    document.querySelector(".ctm-modal-questions > .ctm-modal-result").innerText = "Great! You're score is " + correctAnswers + " out of " + classicTerrorQuestions.length;
-    document.querySelector(".ctm-modal-questions > .ctm-modal-result").style.display = "block";
+    if(correctAnswers == 10) {
+        document.querySelector(".ctm-modal-questions > .ctm-modal-result").innerText = "You're simply a MONSTER GENIOUS! You got " + correctAnswers + " out of " + classicTerrorQuestions.length + "!";
+        document.querySelector(".ctm-modal-questions > .ctm-modal-result").style.display = "block";
+    } else if(correctAnswers == 8 || correctAnswers == 9) {
+        document.querySelector(".ctm-modal-questions > .ctm-modal-result").innerText = "Amazing! You'got " + correctAnswers + " out of " + classicTerrorQuestions.length + "!";
+        document.querySelector(".ctm-modal-questions > .ctm-modal-result").style.display = "block";
+    } else if (correctAnswers == 7 || correctAnswers == 6) {
+        document.querySelector(".ctm-modal-questions > .ctm-modal-result").innerText = "Not bad Boy! You're score is " + correctAnswers + " out of " + classicTerrorQuestions.length + "!";
+        document.querySelector(".ctm-modal-questions > .ctm-modal-result").style.display = "block";
+    } else if(correctAnswers == 5) {
+        document.querySelector(".ctm-modal-questions > .ctm-modal-result").innerText = "C'mon Boy, you could do it better! You're score is " + correctAnswers + " out of " + classicTerrorQuestions.length + "!";
+        document.querySelector(".ctm-modal-questions > .ctm-modal-result").style.display = "block";
+    } else if(correctAnswers < 5) {
+        document.querySelector(".ctm-modal-questions > .ctm-modal-result").innerText = "Geez! You only got " + correctAnswers + " right answers out of " + classicTerrorQuestions.length + "! Don't tell anyone you tried this!";
+        document.querySelector(".cctm-modal-questions > .ctm-modal-result").style.display = "block";
+    }
 }
 
 function hideScore() {
@@ -300,7 +314,7 @@ function resetMtmGame() {
 
 function displayMtmScore() {
     if(mtmcorrectAnswers == 10) {
-        document.querySelector(".mtm-modal-questions > .mtm-modal-result").innerText = "You're simply a GENIOUS! You scored " + mtmcorrectAnswers + " out of " + modernTerrorQuestions.length + "!";
+        document.querySelector(".mtm-modal-questions > .mtm-modal-result").innerText = "You're simply a MONSTER GENIOUS! You got " + mtmcorrectAnswers + " out of " + modernTerrorQuestions.length + "!";
         document.querySelector(".mtm-modal-questions > .mtm-modal-result").style.display = "block";
     } else if(mtmcorrectAnswers == 8 || mtmcorrectAnswers == 9) {
         document.querySelector(".mtm-modal-questions > .mtm-modal-result").innerText = "Amazing! You'got " + mtmcorrectAnswers + " out of " + modernTerrorQuestions.length + "!";

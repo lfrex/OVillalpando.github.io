@@ -224,7 +224,8 @@ footer {
     align-self: flex-start;
 }
 
-.mtm-modal-result {
+.mtm-modal-result,
+.ctm-modal-result {
     color: red;
     font-weight: bold;
     text-align: center;
