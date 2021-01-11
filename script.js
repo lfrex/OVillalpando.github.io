@@ -126,7 +126,7 @@ const modernTerrorQuestions = [
     },
 ];   
 
-//Displasy content for Classic Challenge:
+//Constants for Classic Challenge:
 
 let currentQuestion = 0;
 let correctAnswers = 0;
@@ -136,7 +136,7 @@ const ctmChallenge = document.querySelector("#classic-terrors");
 console.log(ctmChallenge);
 
 
-
+//Display content for CTM-Challenge
 ctmChallenge.addEventListener("click", function(evt) {
     displayCurrentQuestion(); 
 
@@ -179,16 +179,7 @@ ctmChallenge.addEventListener("click", function(evt) {
     });
 });
 
-
-
-
-
-
-
-
-
-
-
+//Display current question for CTM Challenge
 function displayCurrentQuestion() {
     let question = classicTerrorQuestions[currentQuestion].question;
     let questionClass = document.querySelector(".ctm-modal-questions > .ctm-modal-question");
@@ -214,16 +205,109 @@ function resetGame() {
     hideScore();
 }
 
-//Functions to display-hide score
+//Functions to display-hide score CTM-Challenge
 
 function displayScore() {
-    document.querySelector(".ctm-modal-questions > .ctm-modal-result").innerText = "Great! You're score is " + correctAnswers + "out of " + classicTerrorQuestions.length;
+    document.querySelector(".ctm-modal-questions > .ctm-modal-result").innerText = "Great! You're score is " + correctAnswers + " out of " + classicTerrorQuestions.length;
     document.querySelector(".ctm-modal-questions > .ctm-modal-result").style.display = "block";
 }
 
 function hideScore() {
     document.querySelector(".ctm-modal-result").style.display = "none";
 }
+
+
+//Constants for Modern Challenge:
+
+let mtmcurrentQuestion = 0;
+let mtmcorrectAnswers = 0;
+let mtmgameCompleted = false;
+const mtmChallenge = document.querySelector("#modern-terrors");
+
+console.log(mtmChallenge);
+
+
+//Display content for MTM-Challenge
+mtmChallenge.addEventListener("click", function(evt) {
+    displayMtmCurrentQuestion(); 
+
+    let mtmQuizzMessages = document.querySelector(".mtm-quizzMessages");
+    mtmQuizzMessages.style.display = "none";
+
+    document.querySelector(".mtm-modal-nxt-btn").addEventListener("click", function() {
+
+        if(!mtmgameCompleted){
+            let radioBtnsReview = document.querySelector("input[type=radio]:checked");
+
+            if (radioBtnsReview === null) {
+                mtmQuizzMessages.innerText = "Don't be scared, you chicken! Please select an answer!";
+                mtmQuizzMessages.style.display = "block";
+            } else {
+                console.log(radioBtnsReview.value);
+                mtmQuizzMessages.style.display = "none";
+                if (parseInt(radioBtnsReview.value) === modernTerrorQuestions[mtmcurrentQuestion].correctAnswer) {
+                    mtmcorrectAnswers++;
+                }
+                
+                mtmcurrentQuestion++;
+
+                if(mtmcurrentQuestion < modernTerrorQuestions.length) {
+                    displayMtmCurrentQuestion();
+                } else {
+                    displayMtmScore();
+                    document.querySelector(".mtm-modal-nxt-btn").innerText = "Wanna play Again?";
+                    mtmgameCompleted = true;
+                }
+                
+            }
+        } else {
+            mtmgameCompleted = false;
+            document.querySelector(".mtm-modal-nxt-btn").innerText = "Next scare =>";
+            resetMtmGame();
+            displayMtmCurrentQuestion();
+            hideMtmScore();
+        }
+    });
+});
+
+//Display current question for CTM Challenge
+function displayMtmCurrentQuestion() {
+    let question = modernTerrorQuestions[mtmcurrentQuestion].question;
+    let questionMtmClass = document.querySelector(".mtm-modal-questions > .mtm-modal-question");
+    let choiceMtmList = document.querySelector(".mtm-modal-questions > .mtm-modal-answers");
+    let numMtmChoices = modernTerrorQuestions[mtmcurrentQuestion].options.length;
+
+    questionMtmClass.innerText = question;
+    choiceMtmList.innerHTML = "";
+
+    let choice;
+    for(i = 0; i < numMtmChoices; i++) {
+        choice = modernTerrorQuestions[mtmcurrentQuestion].options[i];
+
+        let li = document.createElement("li");
+        li.innerHTML = '<li><input type="radio" value="' + i + '" name="dynradio" />' + choice + '</li>'
+        choiceMtmList.appendChild(li);
+    }
+}
+
+function resetMtmGame() {
+    mtmcurrentQuestion = 0;
+    mtmcorrectAnswers = 0;
+    hideMtmScore();
+}
+
+//Functions to display-hide score MTM-Challenge
+
+function displayMtmScore() {
+    document.querySelector(".mtm-modal-questions > .mtm-modal-result").innerText = "Great! You're score is " + mtmcorrectAnswers + " out of " + modernTerrorQuestions.length;
+    document.querySelector(".mtm-modal-questions > .mtm-modal-result").style.display = "block";
+}
+
+function hideMtmScore() {
+    document.querySelector(".mtm-modal-result").style.display = "none";
+}
+
+
 
 
 //Modal sections construction
