@@ -69,7 +69,6 @@ ul  {
     background-repeat: no-repeat;
     width: 840px;
     height: 490px;
-    padding: 10px;
     border-radius: 8px 8px 8px 8px;
     display: flex;
     flex-direction: column;
@@ -77,7 +76,6 @@ ul  {
     justify-content:center;
     color: white;
     font-size: 20px;
-    margin-right: 20px;
 }
 
 .welcome-p {
