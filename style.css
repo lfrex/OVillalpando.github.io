@@ -26,6 +26,8 @@ header, section {
     -webkit-text-fill-color: transparent;
     padding: -5px;
     cursor: url(https://i.imgur.com/3Q4XBWDs.jpg), auto;
+    margin-top: 10px;
+    margin-bottom: 5;
 }
 
 
@@ -83,9 +85,7 @@ ul  {
     font-size: 30px;
 }
 
-ul {
-    padding: 0;
-}
+
 
 .welcom-ul {
     display: flex;
