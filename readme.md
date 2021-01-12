@@ -103,7 +103,7 @@ The levels of completion for this project were defined as follows:
 
 This is the first time I do somethinng like this, and it was a very interesting experience. Curiously, I found that the hard part was not exactly the programming itself, but the planning. And I'm saying this because this time I followed all the steps pointed by the trainers (wireframe desdign, pseudocode, etc) before start with coding itself and I was able to progress smoothly towards the final idea, and it was only in the parts I didn't include in my original plan were I went into some trouble. 
 
-Also, this time I applied some of the design concepts we learned in Tracy Osborn's "Design for non-designers" [lecture](https://github.com/lfrex/project1) recommended by the instructors, things like only including two different fonts or "adding more white" (well, in this case, black, because of the target market), so, it was another concept practiced and assimilated.
+Also, this time I applied some of the design concepts we learned in Tracy Osborn's "Design for non-designers" [lecture](https://www.youtube.com/watch?v=lsPrhA_m6ss&t=69s) recommended by the instructors, things like only including two different fonts or "adding more white" (well, in this case, black, because of the target market), so, it was another concept practiced and assimilated.
 
 I thing the most important things I learned with this project are:
 
