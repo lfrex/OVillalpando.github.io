@@ -162,7 +162,7 @@ footer {
     background: -webkit-linear-gradient(rgb(255, 255, 0), #e62e00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
-    margin-bottom: 15px;  
+    margin-bottom: 12px;  
     
 }
 
@@ -214,6 +214,8 @@ footer {
     font-size: 25px;
     align-self: flex-start;
     width: 738px;
+    margin-bottom: 7px;
+    
 }
 
 .mtm-modal-answers,
@@ -223,7 +225,7 @@ footer {
     padding-left: 70px;
     font-size: 20px;
     align-self: flex-start;
-    
+    margin-top: 0px;
 }
 
 .mtm-modal-result,
