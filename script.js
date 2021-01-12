@@ -164,7 +164,7 @@ ctmChallenge.addEventListener("click", function(evt) {
                     displayCurrentQuestion();
                 } else {
                     displayScore();
-                    document.querySelector(".ctm-modal-nxt-btn").innerText = "Wanna play Again?";
+                    document.querySelector(".ctm-modal-nxt-btn").innerText = "Play Again?";
                     gameCompleted = true;
                 }
                 
@@ -222,7 +222,7 @@ function displayScore() {
         document.querySelector(".ctm-modal-questions > .ctm-modal-result").style.display = "block";
     } else if(correctAnswers < 5) {
         document.querySelector(".ctm-modal-questions > .ctm-modal-result").innerText = "Geez! You only got " + correctAnswers + " right answers out of " + classicTerrorQuestions.length + "! Don't tell anyone you tried this!";
-        document.querySelector(".cctm-modal-questions > .ctm-modal-result").style.display = "block";
+        document.querySelector(".ctm-modal-questions > .ctm-modal-result").style.display = "block";
     }
 }
 
@@ -269,7 +269,7 @@ mtmChallenge.addEventListener("click", function(evt) {
                     displayMtmCurrentQuestion();
                 } else {
                     displayMtmScore();
-                    document.querySelector(".mtm-modal-nxt-btn").innerText = "Wanna play Again?";
+                    document.querySelector(".mtm-modal-nxt-btn").innerText = "Play Again?";
                     mtmgameCompleted = true;
                 }
                 

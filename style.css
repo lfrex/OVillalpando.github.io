@@ -163,7 +163,7 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
     margin-bottom: 15px;  
-  
+    
 }
 
 .ctm-modal-nxt-btn,
@@ -213,6 +213,7 @@ footer {
     padding-left: 50px;
     font-size: 25px;
     align-self: flex-start;
+    width: 738px;
 }
 
 .mtm-modal-answers,
@@ -222,6 +223,7 @@ footer {
     padding-left: 70px;
     font-size: 20px;
     align-self: flex-start;
+    
 }
 
 .mtm-modal-result,
@@ -230,13 +232,21 @@ footer {
     font-weight: bold;
     text-align: center;
     font-size: 25px;
+    padding-left: 50px;
+    width: 738px;
 }
 
 .ctm-quizzMessages,
-.mdm-quizzMessages {
+.mtm-quizzMessages {
     color: white;
     padding-left: 50px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    align-self: center;
 }
 
-
+input[type="radio"]
+{
+    cursor: pointer;
+}
 
