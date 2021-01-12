@@ -14,13 +14,13 @@ const classicTerrorQuestions = [
         correctAnswer: 0
     },
     {
-        question: "Who was the first option to interpret the Creature in James Whale's \"Frankenstein\"?",
+        question: "Who was the first option to play the Creature in James Whale's \"Frankenstein\"?",
         imgUrl: "https://i.imgur.com/lplz8TJ.jpg",
         options: ["  Bela Lugosi", "  A real reanimated corpse", "  Boris Karloff", "  Lon Chaney"],
         correctAnswer: 0
     },
     {
-        question: "Who wrote the novel in which was based the 1941's \"The Wolf Man\" movie?",
+        question: "Who wrote the novel in which 1941's \"The Wolf Man\" movie was based upon?",
         imgUrl: "https://i.imgur.com/InBEmdX.png",
         options: ["  Edgar Allan Poe", "  Mary Shelley", "  It is not based on a novel", "  H.G. Wells"],
         correctAnswer: 2
@@ -65,7 +65,7 @@ const classicTerrorQuestions = [
 
 const modernTerrorQuestions = [
     {
-        question: "Who interpreted \"The Djinn\" in 1997's \"Whishmaster\" film?",
+        question: "Who played \"The Djinn\"'s rol in 1997's \"Whishmaster\" film?",
         imgUrl: "https://i.imgur.com/S5Qh2Se.jpg",
         options: ["  Andrew Divoff", "  Tilda Swinton", "  David Hasselhoff", "  Robert Kurtzman"],
         correctAnswer: 0
@@ -74,7 +74,7 @@ const modernTerrorQuestions = [
         question: "How many doors were destroyed by Jack Nicholson in \"The shinning\"?",
         imgUrl: "https://i.imgur.com/hV3exkY.jpg",
         options: [  46,   72,   60,   24],
-        correctAnswer: 0
+        correctAnswer: 2
     },
     {
         question: "How many sequels does \"Killer Clowns from Outter Space\" have?",
@@ -122,7 +122,7 @@ const modernTerrorQuestions = [
         question: "Besides the sharks, what other animal appears in all \"Sharknado\" films?",
         imgUrl: "https://i.imgur.com/PYHtNC1.jpg",
         options: ["  A lavalantula", "  Tilda Swinton", "  A graboid ", "  A possum"],
-        correctAnswer: 2
+        correctAnswer: 3
     },
 ];   
 
@@ -221,7 +221,7 @@ function displayScore() {
         document.querySelector(".ctm-modal-questions > .ctm-modal-result").innerText = "C'mon Boy, you could do it better! You're score is " + correctAnswers + " out of " + classicTerrorQuestions.length + "!";
         document.querySelector(".ctm-modal-questions > .ctm-modal-result").style.display = "block";
     } else if(correctAnswers < 5) {
-        document.querySelector(".ctm-modal-questions > .ctm-modal-result").innerText = "Geez! You only got " + correctAnswers + " right answers out of " + classicTerrorQuestions.length + "! Don't tell anyone you tried this!";
+        document.querySelector(".ctm-modal-questions > .ctm-modal-result").innerText = "Geez! You got " + correctAnswers + " right answers out of " + classicTerrorQuestions.length + "! Don't tell anyone you tried this!";
         document.querySelector(".ctm-modal-questions > .ctm-modal-result").style.display = "block";
     }
 }
@@ -326,7 +326,7 @@ function displayMtmScore() {
         document.querySelector(".mtm-modal-questions > .mtm-modal-result").innerText = "C'mon Boy, you could do it better! You're score is " + mtmcorrectAnswers + " out of " + modernTerrorQuestions.length + "!";
         document.querySelector(".mtm-modal-questions > .mtm-modal-result").style.display = "block";
     } else if(mtmcorrectAnswers < 5) {
-        document.querySelector(".mtm-modal-questions > .mtm-modal-result").innerText = "Geez! You only got " + mtmcorrectAnswers + " right answers out of " + modernTerrorQuestions.length + "! Don't tell anyone you tried this!";
+        document.querySelector(".mtm-modal-questions > .mtm-modal-result").innerText = "Geez! You got " + mtmcorrectAnswers + " right answers out of " + modernTerrorQuestions.length + "! Don't tell anyone you tried this!";
         document.querySelector(".mtm-modal-questions > .mtm-modal-result").style.display = "block";
     }
 }
