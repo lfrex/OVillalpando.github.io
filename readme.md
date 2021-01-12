@@ -11,42 +11,6 @@ Monstertrivia is a trivia game for horror movie lovers. It tests your knowledge 
 - [Technologies used](#technologies-used)
 - [Installation Instructions](#installation-instructions)
 - [Personal Takeaways](#personal-takeaways)
-  * [Headings](#headings)
-  * [Paragraphs](#paragraphs)
-  * [Breaks](#breaks)
-  * [Horizontal Rule](#horizontal-rule)
-  * [Emphasis](#emphasis)
-    + [Bold](#bold)
-    + [Italics](#italics)
-  * [Blockquotes](#blockquotes)
-  * [Lists](#lists)
-    + [Unordered](#unordered)
-    + [Ordered](#ordered)
-    + [Time-saving Tip](#time-saving-tip)
-  * [Code](#code)
-    + [Inline code](#inline-code)
-    + ["Fenced" code block](#fenced-code-block)
-    + [Indented code](#indented-code)
-    + [Syntax highlighting](#syntax-highlighting)
-  * [Links](#links)
-    + [Autolinks](#autolinks)
-    + [Inline links](#inline-links)
-    + [Link titles](#link-titles)
-    + [Named Anchors](#named-anchors)
-  * [Images](#images)
-  * [Raw HTML](#raw-html)
-  * [Escaping with backslashes](#escaping-with-backslashes)
-- [Project Objective](#project-objective)
-  * [Strikethrough](#strikethrough)
-  * [Todo List](#todo-list)
-  * [Tables](#tables)
-    + [Aligning cells](#aligning-cells)
-  * [Footnotes](#footnotes)
-    + [Inline footnotes](#inline-footnotes)
-  * [Additional Information](#additional-information)
-    + [What is markdown?](#what-is-markdown)
-    + [Other Resources](#other-resources)
-    + [Contributing](#contributing)
 
 <br>
 <br>
@@ -106,7 +70,7 @@ The levels of completion for this project were defined as follows:
     - Time based scores.
     - Score tracking acrros games.
     - A model to form the questions randomly from a kind of a "question repository".
-    - Playes competing agains others.
+    - Multiplayer version.
 
 <br>
 <br>
