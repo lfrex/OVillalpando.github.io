@@ -87,6 +87,26 @@ Monstertrivia is a trivia game for horror movie lovers. It tests your knowledge 
 
 For more information about the program, please vistit GA website [here](https://generalassemb.ly/education/software-engineering-immersive-remote).
 
+The levels of completion for this project were defined as follows:
++ Bronze Plan or "Minimum Value Product" 
+    - The game can be render it efficiently in a web based browser. 
+    - Display the emergent windows after clicking the seleted option button.
+    - Question and answer options are populated automatically when emergent windows are displayed.
+    - User can select an answer per question, and if it doesn't select any, game send message asking for a valid selection.
+    - After completing all the questions, game displayed a message with score achieved.
+
+<br>
+
++ Silver Plan includes, (besides MVP requirements):
+    - The ability to display a personalized image according to the question in turn.
+    - Different messages for scores depending on the user score.
+    - A "Monster medal" given to the user according its score.
+
++ Golden Plan includes, besides previous requirements:
+    - Time based scores.
+    - Score tracking acrros games.
+    - A model to form the questions randomly from a kind of a "question repository".
+    - Playes competing agains others.
 
 <br>
 <br>
