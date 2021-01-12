@@ -265,3 +265,19 @@ input[type="radio"]
         text-align: center;
     }
 }
+
+@media screen and (max-width:1024px) {
+    .main-header,
+    .main-screen,
+    header, section {
+        font-size: 60px;
+        align-self: center;
+        background-color: black;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .modal-container {
+        flex: 0 0 15%;
+    }
+}
