@@ -252,3 +252,16 @@ input[type="radio"]
     cursor: pointer;
 }
 
+@media screen and (max-width:1024px) {
+    .main-screen,
+    .modal-container,
+    .main-header,
+    .header-img-container,
+    .main-screen,
+    .walking-frank,
+    .welcome-message,
+    header, section {
+        flex: 0 0 23%;
+        text-align: center;
+    }
+}

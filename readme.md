@@ -115,13 +115,14 @@ I thing the most important things I learned with this project are:
 <br>
 
 + The importance of the **pseudocode**: 
-  - Doign pseudocode before start the programming It really helped a lot to tackle the Javascript part. Obviously, I didn't had the "how" while I was writing the logic flow, but when the time to start the script came, some of the pending questions I had were already answered, so it was no to hard to do the programming.
+  - Doing pseudocode before start the programming It really helped a lot to tackle the Javascript part. Obviously, I didn't had the "how" while I was writing the logic flow, but when the time to start the script came, some of the pending questions I had were already answered, so it was no to hard to do the programming.
 
   ![ Some of the "Pseudocode I did for the project](https://i.imgur.com/BltTwdX.jpg "Pseudocode for Monstertrivia")
 
 <br>
 
 + **Debugging!**
+
   - I had a situation in which an excerpt of code just stop working towards the end of the project. I almost panicked, but then I decided it was a good chance to practice some of the "Debuggin Process" we were taught along the course. It was not easy, It took a lot of effort and was time consuming, but at the end, after I found the $%&% extra-letter that was causing the problem, it was very rewarding and satisfactory. Next time I will try to introduce earlier some measures to make the debuggin easier, that's for sure!
 
 <br>
